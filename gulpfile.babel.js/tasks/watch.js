@@ -21,7 +21,6 @@ function watchFiles() {
   gulp.watch([paths.styles.watch], styles);
   gulp.watch([paths.scripts.watch], series(scripts, reload));
   gulp.watch([paths.templates.watch], series(templates, reload));
-  gulp.watch([paths.templates.watch], series(templatesEn, reload));
   gulp.watch(paths.templates.enSrc, series(templatesEn, reload));
   gulp.watch(paths.assets.src, series(assets, reload));
 }
