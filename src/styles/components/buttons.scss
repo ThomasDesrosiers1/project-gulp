@@ -1,0 +1,54 @@
+.btn {
+}
+
+.btn-md {
+    &:hover {
+    }
+}
+
+.btn-sm {
+}
+
+//=== link with left line on hover
+
+// .rapid-link {
+//     width: fit-content;
+//     display: flex;
+//     align-items: center;
+//     gap: var(--spacing-xs);
+
+//     span {
+//         height: 2px;
+//         width: 0;
+//         background-color: var(--color-cta-dark);
+//         transition: all 0.3s ease-in-out;
+//     }
+
+//     h3 {
+//         color: var(--color-secondary);
+//         transition: all 0.3s ease-in-out;
+//     }
+
+//     &:hover {
+//         span {
+//             width: 20px;
+//         }
+
+//         h3 {
+//             color: var(--color-cta-dark);
+//         }
+//     }
+// }
+
+// .rapid-link.small {
+//     h5 {
+//         color: var(--color-secondary);
+//         transition: all 0.3s ease-in-out;
+//     }
+
+//     &:hover {
+//         h5 {
+//             color: var(--color-cta-dark);
+//         }
+//     }
+// }

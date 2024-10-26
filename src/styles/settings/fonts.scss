@@ -1,0 +1,23 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Poppins', serif;
+    --font-secondary: 'Albert Sans', sans-serif;
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(28px, 48px)};
+    --font-size-h2: #{typo(24px, 40px)};
+    --font-size-h3: #{typo(20px, 32px)};
+    --font-size-h4: #{typo(18px, 24px)};
+    --font-size-h5: #{typo(16px, 20px)};
+
+    --font-size-content: #{typo(16px, 18px)};
+    --font-size-content-sm: #{typo(14px, 16px)};
+
+    --font-size-nav: 20px;
+    --font-size-legend: 16px;
+    --font-size-button-sm: 16px;
+    --font-size-button-md: 20px;
+}
