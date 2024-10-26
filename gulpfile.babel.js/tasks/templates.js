@@ -25,3 +25,15 @@ export function templates() {
     )
     .pipe(dest(paths.templates.dest));
 }
+
+export function templatesEn() {
+  return src(paths.templates.enSrc)
+    .pipe(plumber({ errorHandler }))
+    .pipe(twig())
+    .pipe(
+      beautify({
+        indent_size: 4,
+      })
+    )
+    .pipe(dest(paths.templates.enDest));
+}

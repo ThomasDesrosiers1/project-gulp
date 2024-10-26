@@ -11,7 +11,7 @@ import { series } from 'gulp';
 import { reload, serve } from './server';
 import { styles } from './styles';
 import { scripts } from './scripts';
-import { templates } from './templates';
+import { templates, templatesEn } from './templates';
 import { assets } from './assets';
 
 // Config
@@ -21,6 +21,8 @@ function watchFiles() {
   gulp.watch([paths.styles.watch], styles);
   gulp.watch([paths.scripts.watch], series(scripts, reload));
   gulp.watch([paths.templates.watch], series(templates, reload));
+  gulp.watch([paths.templates.watch], series(templatesEn, reload));
+  gulp.watch(paths.templates.enSrc, series(templatesEn, reload));
   gulp.watch(paths.assets.src, series(assets, reload));
 }
 

@@ -15,6 +15,7 @@ export const paths = {
   src: './src',
   dest: './dist',
   deploy: './dist/**/*',
+  en: './dist/en', // add for english files
   styles: {
     src: 'src/styles/main.scss',
     watch: 'src/styles/**/*.scss',
@@ -29,6 +30,8 @@ export const paths = {
     src: 'src/*.{twig,html}',
     watch: 'src/**/*.{twig,html}',
     dest: 'dist/',
+    enSrc: 'src/en/*.{twig,html}', // new path for english files
+    enDest: 'dist/en/', // destination for english files
   },
   assets: {
     src: 'src/assets/**/*',
